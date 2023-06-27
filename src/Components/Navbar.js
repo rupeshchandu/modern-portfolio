@@ -81,44 +81,21 @@ const Navbar = () => {
           
           <nav className='flex items-center justify-center flex-wrap'>
               <motion.a href= "https://twitter.com" target={"_blank"}
-                className='w-6 mr-3'
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}} 
-              
-              >
-                <TwitterIcon/>
-              </motion.a>
-              <motion.a href= "https://twitter.com" target={"_blank"}
-                className='w-6 mx-3'
+                className='w-8 mx-3'
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}} 
               >
                 <GithubIcon/>
               </motion.a>
               <motion.a href= "https://twitter.com" target={"_blank"}
-                className='w-6 mx-3'
+                className='w-[28px] mx-3'
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}} 
               >
                 <LinkedInIcon/>
               </motion.a>
-              <motion.a href= "https://twitter.com" target={"_blank"} 
-                className='w-6 mx-3 bg-light rounded-full'
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}} 
-              >
-                <PinterestIcon />
-              </motion.a>
-              <motion.a href= "https://twitter.com" target={"_blank"}
-                className='w-6 ml-3'
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}} 
-              >
-                <DribbbleIcon/>
-              </motion.a>
-
               <button onClick={()=> setMode(mode === "light" ? "dark" : "light")}
-                  className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}` }
+                  className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-light text-dark" : "bg-dark text-light"}` }
               >
                 {
                   mode === "dark"? <SunIcon className={"fill-dark"} />
@@ -144,46 +121,23 @@ const Navbar = () => {
           </nav>
 
           
-          <nav className='flex items-center justify-center flex-wrap mt-2'>
+          <nav className='flex items-center justify-center flex-wrap mt-4'>
               <motion.a href= "https://twitter.com" target={"_blank"}
-                className=' w-6 mr-3 sm:mx-1'
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}} 
-              
-              >
-                <TwitterIcon/>
-              </motion.a>
-              <motion.a href= "https://twitter.com" target={"_blank"}
-                className=' w-6 mx-3 sm:mx-1 bg-light dark:bg-dark rounded-full' 
+                className=' w-8 mx-3 sm:mx-3 bg-light dark:bg-dark rounded-full' 
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}} 
               >
                 <GithubIcon/>
               </motion.a>
               <motion.a href= "https://twitter.com" target={"_blank"}
-                className=' w-6 mx-3 sm:mx-1'
+                className=' w-8 mx-3 sm:mx-3'
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}} 
               >
                 <LinkedInIcon/>
               </motion.a>
-              <motion.a href= "https://twitter.com" target={"_blank"} 
-                className=' w-6 mx-3 sm:mx-1 bg-light rounded-full'
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}} 
-              >
-                <PinterestIcon />
-              </motion.a>
-              <motion.a href= "https://twitter.com" target={"_blank"}
-                className=' w-6 ml-3 sm:mx-1'
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}} 
-              >
-                <DribbbleIcon/>
-              </motion.a>
-
               <button onClick={()=> setMode(mode === "light" ? "dark" : "light")}
-                  className={`ml-3 flex items-center justify-center rounded-full p-1 sm:mx-1  ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}` }
+                  className={`ml-3 flex items-center justify-center rounded-full p-1 sm:mx-1  ${mode === "light" ? "bg-light text-dark" : "bg-dark text-light"}` }
               >
                 {
                   mode === "dark"? <SunIcon className={"fill-dark"} />
