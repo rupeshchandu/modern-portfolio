@@ -21,8 +21,8 @@ const FeaturedProject = ({type,title,summary,img,link,github})=>{
         border border-solid border-dark bg-light shadow-2xl p-12 relative dark:bg-dark dark:border-light
         lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4
     '>
-        <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light 
-        xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]'/>
+        <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-primary
+        xs:-right-3 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]'/>
         <Link href={link} target='_blank' 
           className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'
         >
@@ -38,7 +38,7 @@ const FeaturedProject = ({type,title,summary,img,link,github})=>{
           <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
             <h2 className='my-2 w-full text-left text-4xl font-bold sm:text-sm'>{title}</h2>
           </Link>
-          <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
+          <p className='my-2 font-medium text-dark dark:text-light'>{summary}</p>
           <div className='mt-2 flex items-center'>
             <Link href={github} target='_blank' className='w-10'><GithubIcon/></Link>
             <Link href={link} target='_blank' 
@@ -63,7 +63,7 @@ const Project = ({title,type,img,link,github})=>{
     <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light 
       p-6 relative dark:bg-dark dark:border-light xs:p-4'>
       <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
-      rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]'/>
+      rounded-br-3xl dark:bg-primaryDark md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]'/>
       <Link href={link} target='_blank' 
         className='w-full cursor-pointer overflow-hidden rounded-lg'
       >
@@ -108,8 +108,11 @@ const projects = () => {
                     <div className='col-span-12'>
                       <FeaturedProject 
                         type= "Featured Project"  
-                        title = "Crypto Screener Application" 
-                        summary = "A feature-rich Crypto Screener App using React, Chakra UI, React Router and chartjs. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency. In this I uses an API which fetches the information about coins and ChartJS is used to display the market chart of coin." 
+                        title = "Crypto Screener" 
+                        summary = {`A feature rich Crypto Screener App using React, Chakra UI, React Router, ChartJS and CoinGecko API. It shows detail regarding almost all the cryptocurrency.  
+                        In this there are 3 pages home, exchanges and coins. In Exchanges page it contains various trading apps by clicking on it will direct into particular 
+                        trading website. In Coins page it contains information about coin i.e price. On clicking particular coin it displays the updated market chart of coin. 
+                        It also contains a feature Dark Mode. It is responsive across all devices.`}
                         img = {project1}
                         link = "https://xcrypto-delta.vercel.app/"
                         github="https://github.com/rupeshchandu/xcrypto"
@@ -119,7 +122,10 @@ const projects = () => {
                       <FeaturedProject 
                           type= "Featured Project"  
                           title = "Video Hub" 
-                          summary = "In this I uses Chakra UI, Reactjs and Firebase. In this there are upload and authenticated sign up and login pages in which we can login and it is directly connected with firebase auth and upload a file that was stored in firebase storage. In this it contains a feature Light and Dark mode." 
+                          summary = {`This is a Video Hub Project. In this technologies used are Chakra UI, ReactJS and FireBase. In this there are Home, Videos, Upload Video,
+                          Log In and Sign Up pages. In Upload page while clicking upload the file the resultant file will be stored in FireBase Storage. In Sign Up page where 
+                          multiple users can register with email and password, the resultant data will be stored in FireBase Authentication. In Log In page where multiple users 
+                          can login with registered email and password. It also contains a Dark Mode feature.`}
                           img = {project4}
                           link = "https://react-video-hub-peach.vercel.app/"
                           github="https://github.com/rupeshchandu/react-video-hub"
@@ -129,7 +135,10 @@ const projects = () => {
                       <FeaturedProject 
                           type= "Featured Project"  
                           title = "Shopping Cart" 
-                          summary = "In this I uses SASS, JS, React redux-tool-kit for state mangement and to create store. In this store it contains the list of items which we wanted to buy. It was generally used in eccomerce application. In this there are features like add, delete and update an items count with parallely it calculates the total price." 
+                          summary = {`An Eccomerce application - Shopping Cart App. In this technologies used are SASS, ReactJS, React-Redux for state management. 
+                          In this it contains Home and Cart pages. In Home page it contains the list of items. In Cart Page it contains the items,quantity and 
+                          total price which we selected to buy. In cart page we can increase or decrease the quantity of an item and we can remove an item from 
+                          the cart. The price will be caliculated automatically for each selection. React-Redux is used to create store.`}
                           img = {project2}
                           link = "https://react-cart-three-liard.vercel.app/"
                           github="https://github.com/rupeshchandu/react-cart"
@@ -139,7 +148,9 @@ const projects = () => {
                       <FeaturedProject 
                           type= "Featured Project"  
                           title = "Modern Portfolio" 
-                          summary = "In this I uses Next.js, Framer-motion and Tailwind CSS. In this I showcase my projects and skills. In this portfolio there are 3 pages home, about and projects. The key features of this portfolio are Smooth Page Transition effects, Cool Animations, On Scroll animations and it is Mobile Responsive." 
+                          summary = {`In this technologies used are Next.js, Framer-motion and Tailwind CSS. In this I showcase my projects and skills. In this portfolio there 
+                          are 3 pages home, about and projects. The key features of this portfolio are Smooth Page Transition effects, Cool Animations, On Scroll 
+                          animations and it is Mobile Responsive.`}
                           img = {project5}
                           link = "/"
                           github="https://github.com/rupeshchandu/modern-portfolio"
