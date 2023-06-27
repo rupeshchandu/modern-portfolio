@@ -28,13 +28,15 @@ const Skills = () => {
         <h2 className='font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32 '>
             Skills
         </h2>
-        <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 
+        <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark 
+          lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 
           lg:bg-circularLightLg lg:dark:bg-circularDarkLg
           md:bg-circularLightMd md:dark:bg-circularDarkMd
           sm:bg-circularLightSm sm:dark:bg-circularDarkSm
         ">
             <motion.div
-            className=" animate-spin-slow flex items-center justify-center rounded-full font-semibold bg-yellow-500 h-12 w-12 text-dark p-8 shadow-dark cursor-pointer absolute lg:p-6 md:p-4 xs:text-xs xs:p-2"
+            className=" animate-spin-slow flex items-center justify-center rounded-full font-semibold bg-yellow-500 h-12 w-12 
+              text-dark p-8 shadow-dark cursor-pointer absolute lg:p-6 md:p-4 xs:text-xs xs:p-2"
             whileHover={{ scale: 1.1 }}
             initial={{x:0,y:0}}
           >
@@ -43,7 +45,7 @@ const Skills = () => {
           <Skill name="FIREBASE" x="30vw" y="0vw"/>
           <Skill name="TAILWINDCSS" x="0vw" y="10vw"/>
           <Skill name="CHAKRA UI" x="0vw" y="20vw"/>
-          <Skill name="WEB DESIGN" x="-30vw" y="0vw"/>
+          <Skill name="SQL" x="-30vw" y="0vw"/>
           <Skill name="SASS" x="0vw" y="-10vw"/>
           <Skill name="PYTHON" x="25vw" y="20vw"/>
           <Skill name="HTML" x="-25vw" y="20vw"/>
