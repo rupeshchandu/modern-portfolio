@@ -111,8 +111,8 @@ const projects = () => {
                         title = "Crypto Screener Application" 
                         summary = "A feature-rich Crypto Screener App using React, Chakra UI, React Router and chartjs. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency. In this I uses an API which fetches the information about coins and ChartJS is used to display the market chart of coin." 
                         img = {project1}
-                        link = "/"
-                        github="/"
+                        link = "https://xcrypto-delta.vercel.app/"
+                        github="https://github.com/rupeshchandu/xcrypto"
                       />
                     </div>
                     <div className='col-span-12'>
@@ -121,8 +121,8 @@ const projects = () => {
                           title = "Video Hub" 
                           summary = "In this I uses Chakra UI, Reactjs and Firebase. In this there are upload and authenticated sign up and login pages in which we can login and it is directly connected with firebase auth and upload a file that was stored in firebase storage. In this it contains a feature Light and Dark mode." 
                           img = {project4}
-                          link = "/"
-                          github="/"
+                          link = "https://react-video-hub-peach.vercel.app/"
+                          github="https://github.com/rupeshchandu/react-video-hub"
                         />
                     </div>
                     <div className='col-span-12'>
@@ -131,8 +131,8 @@ const projects = () => {
                           title = "Shopping Cart" 
                           summary = "In this I uses SASS, JS, React redux-tool-kit for state mangement and to create store. In this store it contains the list of items which we wanted to buy. It was generally used in eccomerce application. In this there are features like add, delete and update an items count with parallely it calculates the total price." 
                           img = {project2}
-                          link = "/"
-                          github="/"
+                          link = "https://react-cart-three-liard.vercel.app/"
+                          github="https://github.com/rupeshchandu/react-cart"
                         />
                     </div>
                     <div className='col-span-12'>
@@ -142,31 +142,27 @@ const projects = () => {
                           summary = "In this I uses Next.js, Framer-motion and Tailwind CSS. In this I showcase my projects and skills. In this portfolio there are 3 pages home, about and projects. The key features of this portfolio are Smooth Page Transition effects, Cool Animations, On Scroll animations and it is Mobile Responsive." 
                           img = {project5}
                           link = "/"
-                          github="/"
+                          github="https://github.com/rupeshchandu/modern-portfolio"
                         />
                     </div>
                     <div className='col-span-6 sm:col-span-12'>
                       <Project 
                           type= "Project"  
                           title = "TechyStar Website" 
-                          
                           img = {project3}
-                          link = "/"
-                          github="/"
+                          link = "https://techystar-blush.vercel.app/"
+                          github="https://github.com/rupeshchandu/techystar"
                         />
                     </div>
                     <div className='col-span-6 sm:col-span-12'>
                       <Project 
                           type= "Project"  
-                          title = "TechyStar Website" 
-                          
+                          title = "Portfolio Website" 
                           img = {project6}
-                          link = "/"
-                          github="/"
+                          link = "https://rupesh-chandu-portfolio.vercel.app/"
+                          github="https://github.com/rupeshchandu/rupesh-chandu-portfolio"
                         />
                     </div>
-                    
-                    
                 </div>
             </Layout>
         </main>
