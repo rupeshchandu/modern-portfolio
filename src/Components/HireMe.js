@@ -4,18 +4,14 @@ import React from "react";
 const HireMe = () => {
   return (
     <div className='fixed left-4 bottom-9 flex items-center 
-    justify-center overflow-hidden md:right-9 md:top-4 md:left-auto md:bottom-auto md:absolute sm:right-4'>
-        
-        <div className='w-4 h-auto flex items-center justify-center relative'></div>
-
-                <Link href= "mailto:lvrupeshch@gmail.com" className='flex items-center justify-center
-                     bg-dark text-light shadow-md border border-solid border-dark w-20 h-20 rounded-full 
-                    font-semibold hover:bg-light hover:text-dark dark:text-dark dark:bg-light
-                     hover:dark:bg-dark  hover:dark:text-light  hover:dark:border-light md:w-12 md:h-12 md:text-[10px]
-                    '>
-                    Hire Me
-                </Link>
-
+    justify-center md:absolute md:right-9 md:top-4 md:left-auto md:bottom-auto sm:right-4'>
+          <Link href= "mailto:lvrupeshch@gmail.com" className='flex items-center justify-center
+                bg-dark text-light shadow-md border border-solid border-dark w-20 h-20 rounded-full 
+              font-semibold hover:bg-light hover:text-dark dark:text-dark dark:bg-light
+                hover:dark:bg-dark  hover:dark:text-light  hover:dark:border-light md:w-12 md:h-12 md:text-[10px]
+              '>
+              Hire Me
+          </Link>
     </div>
   );
 };
